@@ -5,10 +5,7 @@ $id = '';
 $name = '';
 ?>
 <?php
-if($_GET['Choose']===NULL){
-    
-}
-else if (isset($_GET['ADD']) && isset($_GET['name']) && isset($_GET['Choose'])) {
+if (isset($_GET['ADD']) && isset($_GET['name']) && isset($_GET['Choose'])) {
     $Q->Add_customer($_GET['name'], $_GET['Choose']);
 }
 ?>
